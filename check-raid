@@ -13,7 +13,7 @@
 # to be checked.
 #
 
-ADMIN_EMAIL="user@example.com"
+source $HOME/.extra
 
 echo "Checking software RAID"
 if diskutil appleRAID list | grep "^Status:" | grep -qv "Online$"; then
